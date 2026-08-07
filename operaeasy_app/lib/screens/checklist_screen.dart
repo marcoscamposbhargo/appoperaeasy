@@ -301,7 +301,7 @@ class _ChecklistScreenState extends ConsumerState<ChecklistScreen> {
                   child: ListView.separated(
                     scrollDirection: Axis.horizontal,
                     itemCount: photos.length,
-                    separatorBuilder: (_, __) => const SizedBox(width: 8),
+                    separatorBuilder: (_, _) => const SizedBox(width: 8),
                     itemBuilder: (context, i) => Stack(
                       children: [
                         ClipRRect(

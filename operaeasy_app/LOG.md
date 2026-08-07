@@ -1,5 +1,34 @@
 # OperaEasy MVP — Log de Desenvolvimento
 
+## Checkpoint 2026-08-05 (sessão 3) — Câmera real + commit no GitHub
+
+**Status**: câmera do dispositivo testada ponta a ponta no emulador; código
+commitado e pronto pra push.
+
+### Feito
+- **Câmera real** (`image_picker`): item tipo `foto` no checklist agora abre
+  a câmera de verdade, permite múltiplas fotos por item com galeria de
+  miniaturas + botão remover. `AndroidManifest.xml` com permissão `CAMERA`.
+  Testado com o dialog nativo de permissão + captura real no emulador
+  (webcam sintética do Android Studio).
+- **Ajustes finos** em `login_screen.dart` (ícone da marca 52→44px, padding
+  do círculo 20→18) e uso do lockup oficial `logo-operaeasy-light.svg` em
+  vez de recriar o texto "operaeasy" na mão.
+- **Git**: repo tinha só o `first commit` vazio — `home.html` e
+  `operaeasy_app/` nunca foram staged. `.gitignore` do Flutter já cobre
+  `build/` (a pasta que provavelmente travava o commit anterior, tem
+  milhares de arquivos gerados). Commit `17115e7` criado com 206 arquivos.
+  **Falta**: `git push` pro remote `appoperaeasy` — aguardando confirmação
+  do usuário antes de enviar.
+
+### Pendências conhecidas
+- Push ainda não feito.
+- Fluxo Checklist → Revisão → Fechamento integrado mas não re-testado após
+  a mudança de foto mock → foto real.
+- Emulador não persiste entre sessões — reabrir a cada vez.
+
+---
+
 ## Checkpoint 2026-08-05 (sessão 2) — Design system real + câmera
 
 **Status**: 6 telas completas, rodando em emulador Android (Pixel 7 API 34)
